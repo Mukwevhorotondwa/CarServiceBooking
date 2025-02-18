@@ -8,5 +8,5 @@ services:
       - ~/apps/postgres:/var/lib/postgresql/data
     environment:
       - POSTGRES_PASSWORD=supersecret
-      - POSTGRES_USER=denje
-      - POSTGRES_DB=ahha
+      - POSTGRES_USER=vcp
+      - POSTGRES_DB=CSBooking

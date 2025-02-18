@@ -1,0 +1,1 @@
+in order to run the project's database install docker

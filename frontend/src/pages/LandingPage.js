@@ -35,7 +35,7 @@ const LandingPage = () => {
                     <div className="testimonial-cards">
                         <div className="testimonial-card">
                             <p>"The best and most convenient car service I've ever used!"</p>
-                            <h4>- GUsba Banana</h4>
+                            <h4>- Gusba Banana</h4>
                         </div>
                         <div className="testimonial-card">
                             <p>"Professional, reliable, and fair pricing. Highly recommended."</p>

@@ -7,27 +7,45 @@ const LandingPage = () => {
             <header>
                 <h1>Welcome to the Mobile Workshop Platform</h1>
                 <p>Your one-stop solution for car maintenance and repair.</p>
+                <div className="cta-buttons">
+                    <button className="cta-primary">Book a Service</button>
+                    <button className="cta-secondary">Request a Quote</button>
+                </div>
             </header>
             <main>
-                <section>
+                <section className="services">
                     <h2>Our Services</h2>
-                    <p>We offer a wide range of services to keep your car in top condition.</p>
-                    <ul>
-                        <li>Oil Change</li>
-                        <li>Tire Rotation</li>
-                        <li>Brake Inspection</li>
-                        <li>And more...</li>
-                    </ul>
+                    <div className="service-cards">
+                        <div className="service-card">
+                            <h3>Major Service</h3>
+                            <p>Comprehensive check-up including engine, brakes, and transmission.</p>
+                        </div>
+                        <div className="service-card">
+                            <h3>Minor Service</h3>
+                            <p>Includes oil change, filter replacements, and a general safety check.</p>
+                        </div>
+                        <div className="service-card">
+                            <h3>Brake & Clutch</h3>
+                            <p>Specialized services for brake and clutch repairs and replacements.</p>
+                        </div>
+                    </div>
                 </section>
-                <section>
-                    <h2>How it works</h2>
-                    <p>1. Request a service.</p>
-                    <p>2. We come to you.</p>
-                    <p>3. Your car gets serviced.</p>
+                <section className="testimonials">
+                    <h2>What Our Customers Say</h2>
+                    <div className="testimonial-cards">
+                        <div className="testimonial-card">
+                            <p>"The best and most convenient car service I've ever used!"</p>
+                            <h4>- GUsba Banana</h4>
+                        </div>
+                        <div className="testimonial-card">
+                            <p>"Professional, reliable, and fair pricing. Highly recommended."</p>
+                            <h4>- Ndivho Mudzanani</h4>
+                        </div>
+                    </div>
                 </section>
             </main>
             <footer>
-                <p>&copy; 2024 Mobile Workshop Platform</p>
+                <p>&copy; 2025 Mobile Workshop Platform</p>
             </footer>
         </div>
     );

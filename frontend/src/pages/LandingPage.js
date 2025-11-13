@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './LandingPage.css';
 
 const LandingPage = () => {
@@ -9,7 +10,7 @@ const LandingPage = () => {
                 <p>Your one-stop solution for car maintenance and repair.</p>
                 <div className="cta-buttons">
                     <button className="cta-primary">Book a Service</button>
-                    <button className="cta-secondary">Request a Quote</button>
+                    <Link to="/signup" className="cta-secondary">Sign Up</Link>
                 </div>
             </header>
             <main>

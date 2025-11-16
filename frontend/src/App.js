@@ -5,7 +5,7 @@ import LandingPage from './pages/LandingPage';
 import SignUp from './pages/SignUp';
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   const handleSignUp = () => {
     setIsLoggedIn(true);

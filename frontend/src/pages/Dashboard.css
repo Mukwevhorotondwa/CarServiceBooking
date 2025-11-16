@@ -1,24 +1,45 @@
-.dashboard {
-    text-align: center;
+.dashboard-layout {
+    display: flex;
+}
+
+.dashboard-main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .dashboard-header {
-    background-color: #282c34;
+    background-color: #f4f4f4;
     padding: 20px;
-    color: white;
+    border-bottom: 1px solid #ddd;
 }
 
 .dashboard-main {
     padding: 20px;
+    flex-grow: 1;
+    background-color: #fafafa;
 }
 
 .service-summary, .quick-actions {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin-bottom: 20px;
 }
 
 .quick-actions button {
-    margin: 0 10px;
+    margin-right: 10px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.quick-actions button:hover {
+    background-color: #0056b3;
 }

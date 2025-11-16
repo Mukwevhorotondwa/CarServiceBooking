@@ -3,11 +3,16 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Dashboard from './pages/Dashboard';
 import LandingPage from './pages/LandingPage';
 import SignUp from './pages/SignUp';
+import Login from './pages/Login';
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleSignUp = () => {
+    setIsLoggedIn(true);
+  };
+
+  const handleLogin = () => {
     setIsLoggedIn(true);
   };
 
@@ -17,9 +22,10 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/signup" element={<SignUp onSignUp={handleSignUp} />} />
+          <Route path="/login" element={<Login onLogin={handleLogin} />} />
           <Route 
             path="/dashboard" 
-            element={isLoggedIn ? <Dashboard /> : <Navigate to="/" />} 
+            element={isLoggedIn ? <Dashboard /> : <Navigate to="/login" />} 
           />
         </Routes>
       </div>

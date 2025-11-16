@@ -18,3 +18,16 @@ def register_user():
         return jsonify({'message': message}), 409 
 
     return jsonify({'message': message}), 201
+
+@user_api.route('/login', methods=['POST'])
+def login():
+    data = request.get_json()
+    if not data or not data.get('email') or not data.get('password'):
+        return jsonify({'message': 'Email and password are required.'}), 400
+
+    user, message = user_service.login_user(data)
+
+    if not user:
+        return jsonify({'message': message}), 401
+
+    return jsonify({'message': 'Login successful.'}), 200

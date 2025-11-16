@@ -10,6 +10,7 @@ const LandingPage = () => {
                 <p>Your one-stop solution for car maintenance and repair.</p>
                 <div className="cta-buttons">
                     <button className="cta-primary">Book a Service</button>
+                    <Link to="/login" className="cta-secondary">Login</Link>
                     <Link to="/signup" className="cta-secondary">Sign Up</Link>
                 </div>
             </header>

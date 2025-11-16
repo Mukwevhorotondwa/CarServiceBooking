@@ -18,3 +18,12 @@ def create_user(data):
     db.session.commit()
 
     return new_user, "User created successfully."
+
+def login_user(data):
+    """
+    Logs in a user.
+    """
+    user = User.query.filter_by(email=data['email']).first()
+    if user and user.check_password(data['password']):
+        return user, "Login successful."
+    return None, "Invalid email or password."

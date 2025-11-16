@@ -5,18 +5,16 @@ __pycache__/
 *.pyd
 
 # SQLite databases
-*.db
-*.sqlite3
+
+
 
 # Virtual environment
-.venv/
+
 
 # Node modules
-/frontend/node_modules/
-/frontend/build/
+
 
 # Log files
-*.log
 
 # OS-generated files
 .DS_Store
